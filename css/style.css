@@ -21,6 +21,7 @@ nav, header, section, footer {
   display: block;
   content: '';
 }
+
 /*  nav styles  */
 
 nav {
@@ -31,6 +32,28 @@ nav {
 nav span, header span {
   color: #24ba9f;
 }
+
+nav p {
+  float: left;
+  width: 200px;
+  margin: 0;
+  vertical-align: bottom;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: right;
+  width: 100px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
 
 /*  header styles  */
 
@@ -43,13 +66,66 @@ header {
 */
 }
 
+header figure {
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+
+header article {
+  width: 50%;
+  float: left;
+  padding-top: 30px;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  background: #24ba9f;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
 
 /*  section styles  */
 
+
+
 /*  section styles  */
 
-section {
+section .prices {
   background-color: rgb(193, 193, 193);
+}
+
+.prices h4 {
+  border-bottom: 3px solid #24ba9f;
+  width: 50%;
+  margin: 0;
+}
+
+.prices article {
+  border: 1px solid rgb(193, 193, 193);
+  width: 32%;
+  float: left;
+  padding: 15px;
+}
+
+.prices figure {
+  position: relative;
+  width: 32%;
+  float: left;
+  margin: 0;
+  margin-right: 2%;
+}
+
+.prices figcaption {
+  width: 110%;
+  padding: 10px 0 20px 15px;
+  position: absolute;
+  left: 0;
+  top: 70%;
+  background: rgba(255, 255, 255, .2);
 }
 
 /*  section styles  */
