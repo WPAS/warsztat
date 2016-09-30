@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+nav, header, section, footer {
+  width: 100%;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.container::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+/*  nav styles  */
+
+nav {
+  background: black;
+  color: white;
+}
+
+nav span, header span {
+  color: #24ba9f;
+}
+
+/*  header styles  */
+
+header {
+  background-color: rgb(193, 193, 193);
+/* later here will come gradient
+  gradient top: #f8f8f8
+  gradient bottom: #d8d7dd
+
+*/
+}
+
+
+/*  section styles  */
+
+/*  section styles  */
+
+section {
+  background-color: rgb(193, 193, 193);
+}
+
+/*  section styles  */
+
+/*  footer styles  */
