@@ -88,30 +88,26 @@ header a {
   border-radius: 5px;
 }
 
-/*  section styles  */
+/* chairs section styles  */
 
-
-
-/*  section styles  */
-
-section .prices {
+section .chairs {
   background-color: rgb(193, 193, 193);
 }
 
-.prices h4 {
+.chairs h4 {
   border-bottom: 3px solid #24ba9f;
   width: 50%;
   margin: 0;
 }
 
-.prices article {
+.chairs article {
   border: 1px solid rgb(193, 193, 193);
   width: 32%;
   float: left;
   padding: 15px;
 }
 
-.prices figure {
+.chairs figure {
   position: relative;
   width: 32%;
   float: left;
@@ -119,7 +115,7 @@ section .prices {
   margin-right: 2%;
 }
 
-.prices figcaption {
+.chairs figcaption {
   width: 110%;
   padding: 10px 0 20px 15px;
   position: absolute;
@@ -127,6 +123,81 @@ section .prices {
   top: 70%;
   background: rgba(255, 255, 255, .2);
 }
+
+/*  prices section styles  */
+
+.prices {
+  background: #f1f1f1;
+}
+
+.price-card {
+  float: left;
+  background: #f9f9f9;
+  margin-right: 2%;
+  margin-top: 60px;
+  width: 32%;
+  border: 2px solid #e7e7e7;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.price-card a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background: #24ba9f;
+  padding: 10px 0;
+  margin: 40px auto 0;
+  width: 170px;
+  border-radius: 10px;
+}
+
+.price-card p {
+  margin-top: 40px;
+}
+
+.price-card:last-of-type {
+  margin-right: 0;
+}
+
+.price-card h1 {
+  color: #24ba9f;
+  margin: 0 0 20px 0;
+}
+
+.circle-outer {
+  border: 2px solid #e7e7e7;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  top: -35px;
+  left: 42%;
+}
+
+.circle-inner {
+  height: 23px;
+  width: 23px;
+  border-radius: 100%;
+  background: #c2c2c2;
+  position: absolute;
+  top: 27%;
+  left: 26%;
+}
+
+.central-circle {
+  border: 2px solid #e7e7e7;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
+  background: white;
+}
+
+
 
 /*  section styles  */
 
