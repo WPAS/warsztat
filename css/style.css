@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 article, aside, figure, footer, header, nav, section, details, summary {
   display: block;
 }
@@ -58,7 +63,9 @@ nav li {
 /*  header styles  */
 
 header {
-  background-color: rgb(193, 193, 193);
+  background: linear-gradient(to bottom, #f8f8f8 60%, #d8d7dd);
+
+
 /* later here will come gradient
   gradient top: #f8f8f8
   gradient bottom: #d8d7dd
@@ -136,10 +143,47 @@ section .chairs {
   margin-right: 2%;
   margin-top: 60px;
   width: 32%;
+  height: 420px;
+  padding: 40px 0;
   border: 2px solid #e7e7e7;
-  padding: 40px;
   text-align: center;
   position: relative;
+}
+
+.price-card:last-of-type {
+  margin-right: 0;
+}
+
+.price-card h1 {
+  color: #24ba9f;
+  margin: 0 0 20px 0;
+}
+
+.central-circle {
+  border: 2px solid #e7e7e7;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 0 auto 20px;
+  background: white;
+}
+
+
+.price-card p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.price-card p:nth-child(odd) {
+  background: #e4e4e4;
+}
+
+.price-card p:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.empty-space {
+  height: 28px;
 }
 
 .price-card a {
@@ -151,19 +195,6 @@ section .chairs {
   margin: 40px auto 0;
   width: 170px;
   border-radius: 10px;
-}
-
-.price-card p {
-  margin-top: 40px;
-}
-
-.price-card:last-of-type {
-  margin-right: 0;
-}
-
-.price-card h1 {
-  color: #24ba9f;
-  margin: 0 0 20px 0;
 }
 
 .circle-outer {
@@ -188,14 +219,6 @@ section .chairs {
   left: 26%;
 }
 
-.central-circle {
-  border: 2px solid #e7e7e7;
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  margin: 0 auto;
-  background: white;
-}
 
 
 
