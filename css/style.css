@@ -137,6 +137,12 @@ section .chairs {
   background: #f1f1f1;
 }
 
+.section-title {
+  border-bottom: 5px solid #24ba9f;
+  width: 30%;
+  margin: 0;
+}
+
 .price-card {
   float: left;
   background: #f9f9f9;
@@ -148,6 +154,7 @@ section .chairs {
   border: 2px solid #e7e7e7;
   text-align: center;
   position: relative;
+  color: #bebebe;
 }
 
 .price-card:last-of-type {
@@ -166,8 +173,8 @@ section .chairs {
   border-radius: 100%;
   margin: 0 auto 20px;
   background: white;
+  padding: 10px;
 }
-
 
 .price-card p {
   margin: 0;
@@ -219,8 +226,51 @@ section .chairs {
   left: 26%;
 }
 
+.price-card span {
+  display: block;
+  text-align: center;
+}
 
+.price {
+  font-size: 40px;
+}
 
+.price sup {
+  font-size: 16px;
+}
+
+/* styles only for inner price-card */
+
+.green-price-card {
+  background: #24ba9f;
+  border-color: #24ba9f;
+}
+
+.green-price-card .circle-outer {
+  border-color: #24ba9f;
+  background: #24ba9f;
+}
+
+.green-price-card .circle-inner {
+  background: #f1f1f1;
+}
+
+.green-price-card a {
+  color: #24ba9f;
+  background: white;
+}
+
+.green-price-card p:nth-child(odd) {
+  background: white;
+}
+
+.green-price-card h1 {
+  color: white;
+}
+
+.green-price-card .price, .green-price-card .currency {
+  color: #24ba9f;
+}
 
 /*  section styles  */
 
