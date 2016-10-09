@@ -64,13 +64,6 @@ nav li {
 
 header {
   background: linear-gradient(to bottom, #f8f8f8 60%, #d8d7dd);
-
-
-/* later here will come gradient
-  gradient top: #f8f8f8
-  gradient bottom: #d8d7dd
-
-*/
 }
 
 header figure {
@@ -123,7 +116,7 @@ section .chairs {
 }
 
 .chairs figcaption {
-  width: 110%;
+  width: 105%;
   padding: 10px 0 20px 15px;
   position: absolute;
   left: 0;
@@ -272,6 +265,113 @@ section .chairs {
   color: #24ba9f;
 }
 
-/*  section styles  */
+/*  form styles  */
+
+fieldset {
+  float: left;
+  border: none;
+  padding: 10px;
+}
+
+#form-fields {
+  width: 60%;
+  margin-right: 3%;
+}
+
+#form-fields input {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 2em;
+  color: #bdbdbd;
+  padding: 5px;
+  border: 1px solid #bdbdbd;
+
+}
+
+textarea {
+  margin: 10px 0;
+  width: 100%;
+  height: 220px;
+  font-size: 2em;
+  padding: 5px;
+  color: #bdbdbd;
+  border: 1px solid #bdbdbd;
+
+}
+
+.form figure {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+input[type="checkbox"] {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #bdbdbd;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  margin-bottom: 25px;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("../images/form_ok.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+textarea:focus, input:focus {
+  outline: 1px solid #24ba9f;
+}
+
+.agreement {
+  float: left;
+}
+
+ p.agreement {
+  margin: 0;
+  padding: 0 0 0 10px;
+  width: 70%;
+  color: #bdbdbd;
+}
+
+#checkbox::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+input[type="submit"] {
+  width: 100%;
+  clear: both;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 2em;
+  background: #24ba9f;
+  color: white;
+  border-radius: 10px;
+  border-width: 0;
+
+}
 
 /*  footer styles  */
+
+footer {
+  color: #bdbdbd;
+}
+
+#copy {
+  width: 64%;
+  float: left;
+}
+
+#social-media {
+  width: 33%
+  float: left;
+}
+
+#social-media p {
+  width: 15%;
+  float: right;
+  text-align: right;
+}

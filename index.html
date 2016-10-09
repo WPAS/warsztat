@@ -91,24 +91,35 @@
       </article>
     </div>
   </section>
-  <section class=""> <!-- kontakt -->
+  <section class="form"> <!-- kontakt -->
     <div class="container">
       <h1 class="section-title">KONTAKT</h1>
       <form>
+        <fieldset id="form-fields">
+          <input type="text" id="name" placeholder="Imię">
+          <input type="email" id="email" placeholder="email">
+          <textarea type="text" id="info" placeholder="Wiadomość"></textarea>
+        </fieldset>
+        <fieldset>
+          <figure><img src="images/red_chair.png" alt="Red Chair"></figure>
+          <label id="checkbox">
+            <input class="agreement" type="checkbox">
+            <p class="agreement">Zgadzam się na przetwarzanie danych osobowych</p>
+          </label>
+          <input type="submit" value="Wyślij">
+        </fieldset>
       </form>
     </div>
   </section>
   <footer>
     <div class="container">
-        <p>&copy; bla bla bla</p>
-        <div>
-          <div>
-            <img src="" alt="..... logo">
-            <img src="" alt="..... logo">
-            <img src="" alt="..... logo">
-            <img src="" alt="..... logo">
-          </div>
-          <p>SIT <span>ON</span> CHAIR</p>
+        <p id="copy">Copyright 2014 | All Rights Reserved - Sit On Chair</p>
+        <div id="social-media">
+          <a href="#"><img src="images/flickr.png" alt="Flickr logo"></a>
+          <a href="#"><img src="images/vimeo.png" alt="Vimeo logo"></a>
+          <a href="#"><img src="images/pinterest.png" alt="Pinterest logo"></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter logo"></a>
+          <p>SIT <strong>ON</strong> CHAIR</p>
         </div>
     </div> <!-- container -->
   </footer>
