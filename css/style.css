@@ -1,5 +1,34 @@
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('../fonts/raleway-thin.woff2') format('woff2'),
+         url('../fonts/raleway-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold.woff2') format('woff2'),
+         url('../fonts/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 * {
   box-sizing: border-box;
+  font-family: "ralewayregular", sans-serif;
 }
 
 body {
@@ -48,11 +77,15 @@ nav p {
 nav ul {
   margin: 0;
   padding: 0;
+  font-family: "ralewaybold", sans-serif;
+  letter-spacing: .1em;
+  font-size: .9em;
+  font-weight: 900;
 }
 
 nav li {
   float: right;
-  width: 100px;
+  width: 125px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -66,17 +99,36 @@ header {
   background: linear-gradient(to bottom, #f8f8f8 60%, #d8d7dd);
 }
 
+header h1 {
+  font-family: "ralewaybold", sans-serif;
+  font-size: 2em;
+}
+
 header figure {
-  width: 50%;
+  width: 45%;
   float: left;
   margin: 0;
 }
 
 header article {
-  width: 50%;
+  width: 47%;
   float: left;
-  padding-top: 30px;
+  padding: 30px 50px 0 0;
   text-align: center;
+}
+
+.gallery-nav {
+  display:block;
+  float: left;
+  width: 4%;
+  font-size: 5em;
+  padding-top: 140px;
+}
+
+header p, .chairs-info p {
+  line-height: 1.5em;
+  font-weight: 600;
+  font-size: .9em;
 }
 
 header a {
@@ -98,13 +150,14 @@ section .chairs {
   border-bottom: 3px solid #24ba9f;
   width: 50%;
   margin: 0;
+  font-family: "ralewaybold", sans-serif;
 }
 
 .chairs article {
   border: 1px solid rgb(193, 193, 193);
   width: 32%;
   float: left;
-  padding: 15px;
+  padding: 25px 20px;
 }
 
 .chairs figure {
@@ -122,6 +175,10 @@ section .chairs {
   left: 0;
   top: 70%;
   background: rgba(255, 255, 255, .2);
+}
+
+.chairs-info p {
+  color: #686868;
 }
 
 /*  prices section styles  */
@@ -215,21 +272,27 @@ section .chairs {
   border-radius: 100%;
   background: #c2c2c2;
   position: absolute;
-  top: 27%;
+  top: 26%;
   left: 26%;
 }
 
 .price-card span {
   display: block;
+  position: relative;
+  top: 6px;
+  left: 4px;
   text-align: center;
+  font-family: "ralewaybold", sans-serif;
 }
 
 .price {
-  font-size: 40px;
+  font-size: 2em;
 }
 
 .price sup {
   font-size: 16px;
+  position: relative;
+  top: -8px;
 }
 
 /* styles only for inner price-card */
@@ -274,34 +337,56 @@ fieldset {
 }
 
 #form-fields {
-  width: 60%;
+  width: 58%;
   margin-right: 3%;
+  padding: 25px 0;
 }
 
-#form-fields input {
+#form-fields input, textarea {
   width: 100%;
   margin: 10px 0;
   font-size: 2em;
   color: #bdbdbd;
   padding: 5px;
   border: 1px solid #bdbdbd;
+}
 
+input::-webkit-input-placeholder {
+  font-weight: 100;
+  font-family: "ralewaythin", sans-serif;
+}
+input::-moz-placeholder {
+  font-weight: 100;
+  font-family: "ralewaythin", sans-serif;
+}
+input::-ms-input-placeholder {
+  font-weight: 100;
+  font-family: "ralewaythin", sans-serif;
+}
+
+textarea::-webkit-input-placeholder {
+  font-weight: 100;
+  font-family: "ralewaythin", sans-serif;
+}
+
+textarea::-moz-placeholder {
+  font-weight: 100;
+  font-family: "ralewaythin", sans-serif;
+}
+textarea::-ms-input-placeholder {
+  font-weight: 100;
+  font-family: "ralewaythin", sans-serif;
 }
 
 textarea {
-  margin: 10px 0;
-  width: 100%;
-  height: 220px;
-  font-size: 2em;
-  padding: 5px;
-  color: #bdbdbd;
-  border: 1px solid #bdbdbd;
-
+  height: 205px;
 }
 
 .form figure {
   margin: 0;
   margin-bottom: 25px;
+  width: 360px;
+  padding: 0 0 0 10px;
 }
 
 input[type="checkbox"] {
@@ -341,8 +426,12 @@ textarea:focus, input:focus {
   content: '';
 }
 
+.submit-column {
+  width: 360px;
+}
+
 input[type="submit"] {
-  width: 100%;
+  width: 360px;
   clear: both;
   margin: 10px 0;
   padding: 10px 0;
@@ -351,7 +440,7 @@ input[type="submit"] {
   color: white;
   border-radius: 10px;
   border-width: 0;
-
+  font-family: "ralewaybold", sans-serif;
 }
 
 /*  footer styles  */
