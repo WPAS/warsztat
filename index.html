@@ -12,19 +12,43 @@
       <ul>
         <li>KONTAKT</li>
         <li>GALERIA</li>
-        <li>O FIRMIE</li> <!-- here will come hover menu -->
+        <li class="hover-menu-anchor">O FIRMIE
+          <ul class="firm-options hidden">
+            <li>Aktualności</li>
+            <li>Nasz team</li>
+            <li>Historia</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
   <header>
     <div class="container">
       <span class="gallery-nav">&lt;</span>
-      <figure><img src="images/black_chair.png" alt="comfortable chair"></figure>
-      <article>
-        <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <a href="#">ZOBACZ WIĘCEJ</a>
-      </article>
+      <div class="slider">
+        <figure><img src="images/black_chair.png" alt="comfortable chair"></figure>
+        <article>
+          <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <a href="#">ZOBACZ WIĘCEJ</a>
+        </article>
+      </div>
+      <div class="slider hidden">
+        <figure><img src="images/red.png" alt="comfortable chair"></figure>
+        <article>
+          <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
+          <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+          <a href="#">ZOBACZ WIĘCEJ</a>
+        </article>
+      </div>
+      <div class="slider hidden">
+        <figure><img src="images/orange.png" alt="comfortable chair"></figure>
+        <article>
+          <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <a href="#">ZOBACZ WIĘCEJ</a>
+        </article>
+      </div>
       <span class="gallery-nav">&gt;</span>
     </div>
   </header>
@@ -93,6 +117,80 @@
       </article>
     </div>
   </section>
+  <section class="application "> <!-- this section was created by Coders Lab -->
+      <div class="container">
+          <section class="choice_part inline">
+              <div>
+                  <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                  <span class="green_bell"></span>
+              </div>
+
+              <div class="form">
+                  <div class="drop_down_list">
+                      <span class="list_label">Wybierz rodzaj</span>
+                      <span class="list_arrow"></span>
+                      <ul class="list_panel hidden chairs_choice">
+                          <li data-price="250">Clair</li>  <!-- yes, data attribute in html is not best way to add prices, but we have no acces to database in that project :) -->
+                          <li data-price="300">Margarita</li>
+                          <li data-price="400">Selena</li>
+                      </ul>
+                  </div>
+                  <div class="drop_down_list">
+                      <span class="list_label">Wybierz kolor</span>
+                      <span class="list_arrow"></span>
+                      <ul class="list_panel hidden colors_choice">
+                          <li data-price="20">Czerwony</li>
+                          <li data-price="0">Czarny</li>
+                          <li data-price="20">Pomarańczowy</li>
+                      </ul>
+                  </div>
+                  <div class="drop_down_list">
+                      <span class="list_label">Wybierz materiał</span>
+                      <span class="list_arrow"></span>
+                      <ul class="list_panel hidden pattern_choice">
+                          <li data-price="0">Tkanina</li>
+                          <li data-price="100">Skóra</li>
+                      </ul>
+                  </div>
+                  <div class="checkbox check-box">
+                      <input type="checkbox" id="transport" data-transport-price="50">
+                      <label for="transport">Transport</label>
+                  </div>
+                  <!--<div class="checkbox"></div>-->
+                  <!--<span class="list_label inline_text">Transport</span>-->
+              </div>
+          </section>
+
+          <section class="image_part inline">
+              <img src="images/orange.png">
+          </section>
+
+          <section class="summary_part inline">
+              <div class="align_right">
+                  <h3>PODSUMOWANIE</h3>
+                  <span class="green_bell"></span>
+              </div>
+
+              <div class="summary_panel">
+                  <div class="panel_left">
+                      <h4 class="title">Twój fotel</h4>
+                      <span class="color"></span>
+                      <span class="pattern"></span>
+                      <span class="transport"></span>
+                  </div>
+                  <div class="panel_right">
+                      <h4 class="title value"></h4>
+                      <span class="color value"></span>
+                      <span class="pattern value"></span>
+                      <span class="transport value"></span>
+                  </div>
+                  <div class="sum_label">SUMA</div>
+                  <div class="sum"><strong></strong></div>
+              </div>
+              <a href="" class="green_button">Zamawiam</a>
+          </section>
+      </div>
+  </section>
   <section class="form"> <!-- kontakt -->
     <div class="container">
       <h1 class="section-title">KONTAKT</h1>
@@ -125,5 +223,6 @@
         </div>
     </div> <!-- container -->
   </footer>
+<script src="js/app.js"></script>
 </body>
 </html>
